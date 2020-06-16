@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "rocket_name": "Falcon 1",
+    "rocket_type": "rocket",
+    "description": "Una breve descripcion aqui",
+    "wikipedia": "..."
+  },
+  {
+    "id": 2,
+    "rocket_name": "Big Falcon Rocket",
+    "rocket_type": "rocket",
+    "description": "Una breve descripcion aqui",
+    "wikipedia": "..."
+  },
+  {
+    "id": 3,
+    "rocket_name": "Falcon 9",
+    "rocket_type": "rocket",
+    "description": "Una breve descripcion aqui",
+    "wikipedia": "..."
+  },
+  {
+    "id": 4,
+    "rocket_name": "Dragon",
+    "rocket_type": "cargo",
+    "description": "Una breve descripcion aqui",
+    "wikipedia": "..."
+  }
+]

@@ -3,7 +3,7 @@
  * export => puede existir mas de una vez por archivo
  */
 import renderRocketCard from '../views/rocket' // Export default
-import { getAllRockets } from '../models/rocket' // export (unicamente a esta funcion)
+import { getAllRockets, getAllRocketsFromJSON } from '../models/rocket' // export (unicamente a esta funcion)
 
 // X Obtener el elemento div con el id rockets 
 // Obtener los cohetes
@@ -13,9 +13,10 @@ import { getAllRockets } from '../models/rocket' // export (unicamente a esta fu
 
 const rocketDiv = document.getElementById('rockets')
 
-export async function displayRockets() {
+export function displayRockets() {
   try {
-    const rockets =  await getAllRockets(); // [{...},  {...}, {...}, {...}]
+    // const rockets =  await getAllRockets(); // [{...},  {...}, {...}, {...}]
+    const rockets = getAllRocketsFromJSON(); // [{...},  {...}, {...}, {...}]
 
     const elements = rockets.map((rocket)=> {
       const element = renderRocketCard(rocket);

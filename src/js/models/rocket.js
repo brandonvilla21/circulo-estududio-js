@@ -1,3 +1,5 @@
+import data from '../../data'
+
 export async function getAllRockets() {
   // Llamar a la API de SpaceX: https://api.spacexdata.com/v3/rockets
   try {
@@ -7,5 +9,8 @@ export async function getAllRockets() {
   } catch (error) {
     console.error(error)
   }
+}
 
+export function getAllRocketsFromJSON() {
+  return data
 }
